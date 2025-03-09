@@ -1,0 +1,23 @@
+[project]
+name = "fetching-pubmed-paper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rakesh",email = "lolururakesh@gmail.com"}
+]
+packages = [{include = "fetching_pubmed_paper"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "argparse (>=1.4.0,<2.0.0)",
+    "xmltodict (>=0.14.2,<0.15.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+argparse = "^1.4.0"
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
